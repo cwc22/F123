@@ -1,16 +1,13 @@
-import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
-import Amplify from 'aws-amplify';
-import awsExports from './aws-exports';
-
-Amplify.configure(awsExports);
+import './App.css'
 
 function App() {
   return (
-    <div>
-      <h1>Notes App</h1>
-      <AmplifySignOut />
+    <div className="App">
+      <header className="App-header">
+        F123
+      </header>
     </div>
-  );
+  )
 }
 
-export default withAuthenticator(App);
+export default App
