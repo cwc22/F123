@@ -1,0 +1,9 @@
+type Prediction @model {
+  id: ID!
+  name: String
+  race_name: String
+  prediction_type: String
+  driver_name: String
+  position: Int
+
+}

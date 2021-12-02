@@ -9,5 +9,22 @@
       "type": "cicd",
       "lastPushTimeStamp": "2021-11-23T04:58:12.265Z"
     }
+  },
+  "api": {
+    "f123": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            }
+          },
+          "additionalAuthenticationProviders": []
+        }
+      }
+    }
   }
 }
