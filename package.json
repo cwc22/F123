@@ -1,0 +1,24 @@
+{
+  "name": "F123",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@github.com:cwc22/F123.git",
+  "author": "Cody Cameron <cwc22@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "client:build": "esbuild client/src/index.tsx --bundle --minify --outfile=built/app.js",
+    "server:build": "esbuild server/src/server.ts --bundle --minify --outfile=built/server.js --platform=node",
+    "build": "yarn client:build && yarn server:build"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "@types/react": "^18.0.18",
+    "@types/react-dom": "^18.0.6",
+    "express": "^4.18.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.15.7"
+  }
+}
