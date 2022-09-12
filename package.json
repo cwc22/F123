@@ -6,9 +6,11 @@
   "author": "Cody Cameron <cwc22@outlook.com>",
   "license": "MIT",
   "scripts": {
-    "client:build": "esbuild client/src/index.tsx --bundle --minify --outfile=built/app.js",
+    "dev":"node serve.js",
+    "start": "node serve.js",
+    "client:build": "node build.js",
     "server:build": "esbuild server/src/server.ts --bundle --minify --outfile=built/server.js --platform=node",
-    "build": "yarn client:build && yarn server:build"
+    "build": "npm run client:build && npm run server:build"
   },
   "dependencies": {
     "@types/express": "^4.17.13",

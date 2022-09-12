@@ -6,6 +6,7 @@ A simple website to pick projected qualifying order as well as race results in o
 ## Tech
 - React
 - Express
+- esBuild
 - Azure
 - Docker
 
