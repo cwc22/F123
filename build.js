@@ -1,4 +1,3 @@
-// build.js
 const esbuild = require("esbuild");
 
 esbuild.build({
