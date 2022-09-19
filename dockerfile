@@ -5,11 +5,11 @@ RUN cd F123 && npm install && npm run build
 
 FROM node:18 AS server-build
 WORKDIR /root/
-COPY --from=ui-build /usr/src/app/F123/public ./F123/public
+COPY --from=ui-build /usr/src/app/F123/public/ ./F123/public
 COPY F123-api/package*.json ./F123-api/
 RUN cd F123-api && npm install
-COPY api/server/src/index.js ./api/
+COPY F123-api/server/src/index.js ./F123-api/server/src/
 
 EXPOSE 8080
 
-CMD ["node", "./api/index.js"]
+CMD ["node", "./F123-api/server/src/index.js"]
