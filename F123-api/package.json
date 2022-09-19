@@ -5,7 +5,6 @@
   "repository": "git@github.com:cwc22/F123.git",
   "author": "Cody Cameron <cwc22@outlook.com>",
   "license": "MIT",
-
   "type": "module",
   "scripts": {
     "dev":"node server/src/index.js",
